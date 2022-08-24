@@ -10,10 +10,11 @@ const MainBanner = () => {
       sm:flex gap-8 justify-between h-full'>
           <div className='sm:w-1/2 xl:w-1/3 '>
             <h2 className='text-green-900 font-bold text-5xl text-center sm:text-left '>About Us</h2>
-            <p className='py-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis, dignissimos deleniti optio veniam nostrum temporibus eaque qui eius asperiores.
+            <p className='py-4 text-center sm:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis, dignissimos deleniti optio veniam nostrum temporibus eaque qui eius asperiores.
             </p>
           </div>
-          <button type='button' className=' sm:my-0 my-4 2xl:mt-16 bg-black text-white px-4 rounded-lg h-full py-2 capitalize md:mt-12 sm:mx-0 block mx-auto hover:bg-yellow-400 hover:text-black'>Explore Collection</button>
+          
+          <p className=' sm:my-0 my-4 2xl:mt-16 bg-black text-white px-4 rounded-lg h-full py-2 capitalize md:mt-12 sm:mx-0 block mx-auto text-center ' id='features'>Refresh in your beauty</p>
       </div>
       <div className='flex md:flex-row  sm:flex-col-reverse justify-between flex-col-reverse w-full h-full'>
         <div className='w-full  md:w-1/2 h-full  flex flex-wrap justify-around'>

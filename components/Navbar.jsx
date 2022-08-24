@@ -9,7 +9,6 @@ export const Menu = ()=>{
     <ul className='sm:flex gap-12 justify-center items-center  '>
       <li className='pb-2'><a href="/">Home</a></li>
       <li className='pb-2'><a href="/MainBanner">About</a></li>
-      <li className='pb-2'><a href="#features">Features</a></li>
       <li className='pb-2'><a href="/NewsletterForm">Join</a></li>
     </ul>
   )

@@ -4,7 +4,7 @@ import { urlFor } from '../lib/client'
 
 const Products = ({product: {image, name, slug, price}}) => {
   return (
-    <section>
+    <section id='features'>
         <Link href={`/product/${slug.current}`}>
             <div className='sm:h-[40%] pb-4 w-full h-[80%] mx-auto'>
                 <img

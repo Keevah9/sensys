@@ -19,12 +19,12 @@ const HeroBanner = ({heroBanner}) => {
         </Link>
         <div className='  w-full md:w-1/2'>
           <h1 className='text-green-900 text-4xl text-center sm:text-8xl font-bold pt-12 sm:pt-0 sm:text-left'>{heroBanner.smallText} <br /><span className=' px-32 sm:px-14'>{heroBanner.midText}</span> </h1>
-          <div className='md:flex lg:pt-16 md:gap-8 w-full pt-8'>
+          <div className='md:flex lg:pt-16 md:gap-8 w-full pt-8 text-center sm:text-left'>
             <h5 className='w-full text-2xl md:text-3xl lg:w-2/3  font-bold'>{heroBanner.desc}</h5>
             <p className='w-full sm:text-2xl pt-4 md:pt-0 lg:w-2/3'>{heroBanner.largeText1}</p>
           </div>
           <Link href={`/product/${heroBanner.product}`} >
-          <button type='button' className=' mt-4 2xl:mt-16 bg-black text-white px-4 rounded-lg py-2 capitalize md:mt-12 mx-auto  sm:mx-0 hover:bg-yellow-400 hover:text-black'>{heroBanner.buttonText}</button>
+          <button type='button' className=' mt-4 2xl:mt-16 bg-black text-white px-4 rounded-lg py-2 capitalize md:mt-12 block mx-auto  sm:mx-0 hover:bg-yellow-400 hover:text-black '>{heroBanner.buttonText}</button>
           </Link>
         </div>
       </section>

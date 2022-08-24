@@ -16,10 +16,9 @@ const Layouts = ({children}) => {
         {children}
       </main>
       <footer className='bg-yellow-300'>
-        <FooterBanner />
+        <FooterBanner/>
       </footer>
     </div>
   )
 }
-
 export default Layouts

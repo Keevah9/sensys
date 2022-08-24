@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 
 const Features = ({heroBanner}) => {
   return (
-    <section className='py-16  mx-auto  px-16 w-full xl:w-5/6 xl:mx-auto relative bg-yellow-400'>
+    <section className='py-16  mx-auto  px-16 w-full xl:w-5/6 xl:mx-auto text-center sm:text-left relative bg-yellow-400'>
       <div className=' sm:flex justify-between  gap-8'>
         <div className='pb-4'>
           <h2 className='font-bold text-5xl pb-4 text-green-900'>Featured</h2>
@@ -24,7 +24,7 @@ const Features = ({heroBanner}) => {
             </Fade>
         </div>
         <div >
-          <Fade right>
+          <Fade left>
             <Image
               src={image2}
               height={600} 
