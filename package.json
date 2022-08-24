@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next",
+  "build": "next build",
+  "start": "next start -p $PORT",
+  "heroku-postbuild": "npm run build",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "lint": "next lint"
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.78",
