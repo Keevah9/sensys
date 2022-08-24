@@ -3,5 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 }
-
-module.exports = nextConfig
+// const nextImages = require("next-images");
+module.exports = {
+  images: {
+    domains: ["images.pexels.com"],
+  },
+  nextConfig,
+};
+// module.exports = nextImages();
