@@ -4,7 +4,7 @@ import NewsletterForm from './NewsletterForm'
 import MainBanner from './MainBanner';
 import { Single,  Review, } from '../components';
 import { client } from '../lib/client';
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
 
@@ -35,15 +35,15 @@ const index = ({products, bannerData, testiData}) => {
   return (
     <div className=" bg-gray-100 ">
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
-      <Zoom>
+      {/* <Zoom> */}
         <Main />
-      </Zoom>
+      {/* </Zoom> */}
       <div className="bg-yellow-400">
         <Features heroBanner={bannerData.length && bannerData[0]} />
       </div>
-      <Zoom>
+      {/* <Zoom> */}
         <MainBanner />
-      </Zoom>
+      {/* </Zoom> */}
       <>
         <Single />
         <div className="w-5/6 mx-auto xl:w-4/5">
