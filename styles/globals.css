@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Overpass:wght@300;600&family=Poppins:wght@100&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 
@@ -14,8 +14,6 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      /* border: 2px solid red; */
-      font-family: 'Poppins' san-serif;
     }
     html{
       scroll-behaviour: smooth;
