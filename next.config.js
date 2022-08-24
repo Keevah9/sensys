@@ -8,6 +8,5 @@ module.exports = {
   images: {
     domains: ["images.pexels.com", "sensys"],
   },
-  nextConfig,
 };
 // module.exports = nextImages();
