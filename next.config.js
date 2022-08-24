@@ -4,9 +4,5 @@ const nextConfig = {
   swcMinify: true,
 }
 // const nextImages = require("next-images");
-module.exports = {
-  images: {
-    domains: ["images.pexels.com", "sensys"],
-  },
-};
+module.exports = nextConfig;
 // module.exports = nextImages();
