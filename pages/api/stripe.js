@@ -3,40 +3,35 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
-
-
   if (req.method === "POST") {
-    // console.log(req.body);
     try {
-        const params = {
-          submit_type: "pay",
-          mode: "payment",
-          payment_method_types: ["card"],
-          billing_address_collection: "auto",
-          shipping_options: [
-            { shipping_rate: "shr_1LX1yeC3eimhZsNau7zzXIzh" },
-            { shipping_rate: "shr_1LX20aC3eimhZsNaHxzzXkgq" },
-            { shipping_rate: "shr_1LX21iC3eimhZsNaxiCpC8Y8" },
-          ],
-          line_items: req.body.map((item)=>{
-            const img = item.image[0].asset._ref
-            const newImage = img.replace(
-              "image-",
-              "https://cdn.sanity.io/images/67kkvzk4/production/" ).replace('-jpg','.jpg' );
-console.log('image', newImage)
+      const params = {
+        submit_type: "pay",
+        mode: "payment",
+        payment_method_types: ["card"],
+        billing_address_collection: "auto",
+        shipping_options: [
+          { shipping_rate: "shr_1LX1yeC3eimhZsNau7zzXIzh" },
+          { shipping_rate: "shr_1LX20aC3eimhZsNaHxzzXkgq" },
+          { shipping_rate: "shr_1LX21iC3eimhZsNaxiCpC8Y8" },
+        ],
+        line_items: req.body.map((item)=>{
+          const img = item.image[0].asset._ref
+          const newImage = img.replace(
+            "image-",
+            "https://cdn.sanity.io/images/67kkvzk4/production/" ).replace('-jpg','.jpg' );
               return{
                 price_data:{
-                    currency:'GBP',
-                    product_data:{
-                        name: item.name,
-                        images: [newImage],
-                    },
-                    unit_amount:item.price * 100
+                  currency:'GBP',
+                  product_data:{
+                    name: item.name,
+                    images: [newImage],
+                  },
+                  unit_amount:item.price * 100
                 },
                 adjustable_quantity: {
-                    enabled: true,
-                    minimum: 1,
-
+                  enabled: true,
+                  minimum: 1,
                 },
                 quantity: item.quantity
               }
@@ -45,8 +40,6 @@ console.log('image', newImage)
           success_url: `${req.headers.origin}/success`,
           cancel_url: `${req.headers.origin}/canceled`,
         };
-
-
 
       // Create Checkout Sessions from body params.
       const session = await stripe.checkout.sessions.create(params);
