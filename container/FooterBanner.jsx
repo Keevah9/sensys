@@ -17,15 +17,14 @@ const FooterBanner = () => {
           <div>
             <div>
               <h4 className='pb-4 font-bold text-2xl'>Home</h4>
-              <p><a href="#home">Discover</a></p>
+              <p><a href="/">Discover</a></p>
               <p className='py-4'><a href="#features">Explore</a></p>
               <p><a href="#join">Join</a></p>
             </div>
             <div className='mt-6'>
               <h4 className='pb-4 font-bold text-2xl'>Company</h4>
-              <p ><a href="#about">About Us</a> </p>
               <Link href='/Shipping'>
-                <p className='py-4'>Shipping & Returns </p>
+                <p>Shipping & Returns </p>
               </Link>
               <Link href='/Terms'>
                 <p className='py-4'>Terms of use </p>
@@ -38,8 +37,8 @@ const FooterBanner = () => {
           <div>
             <div>
               <h4 className='pb-4 font-bold text-2xl'>Features</h4>
+              <p ><a href="/MainBanner">About Us</a> </p>
               <p><a href="#cart" onClick={()=>setShowCart(true)}>Cart</a> </p>
-              <p><a href="#features">Sale</a> </p>
             </div>
             <div className='mt-6 '>
               <h4 className='pb-4 font-bold text-2xl'> Contact </h4>
