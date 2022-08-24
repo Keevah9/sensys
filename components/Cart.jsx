@@ -39,7 +39,7 @@ const Cart = () => {
           <div className='h-full flex flex-col items-center text-center m-[40px]'>
             <AiOutlineShopping size={60}  className='w-full h-1/5 '/>
             <h3>Your Cart is empty</h3>
-            <Link href='/product/slug'>
+            <Link >
               <button type='button'  className='mt-20  bg-black text-white px-4 rounded-lg py-2 ' onClick={()=>setShowCart(false)}>Go Shopping</button>
             </Link>
           </div>
