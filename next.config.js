@@ -6,7 +6,7 @@ const nextConfig = {
 // const nextImages = require("next-images");
 module.exports = {
   images: {
-    domains: ["images.pexels.com"],
+    domains: ["images.pexels.com", "sensys"],
   },
   nextConfig,
 };
