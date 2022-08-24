@@ -38,7 +38,7 @@ const FooterBanner = () => {
             <div>
               <h4 className='pb-4 font-bold text-2xl'>Features</h4>
               <p ><a href="/MainBanner">About Us</a> </p>
-              <p><a href="#cart" onClick={()=>setShowCart(true)}>Cart</a> </p>
+              <p onClick={()=>setShowCart(true)}className='pt-2 cursor-pointer'>Cart</p>
             </div>
             <div className='mt-6 '>
               <h4 className='pb-4 font-bold text-2xl'> Contact </h4>
