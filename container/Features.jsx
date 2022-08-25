@@ -5,9 +5,9 @@ import image2 from '../assets/two.jpg'
 import Image from 'next/image'
 import Fade from 'react-reveal/Fade'
 
-const Features = ({heroBanner}) => {
+const Features = ({product: {image, name, slug, price}}) => {
   return (
-    <section className='py-16  mx-auto  px-16 w-full xl:w-5/6 xl:mx-auto text-center sm:text-left relative bg-yellow-400'>
+    <section className='py-16  mx-auto  px-16 xl:px-0 w-full xl:w-5/6 xl:mx-auto text-center sm:text-left relative bg-yellow-400'>
       <div className=' sm:flex justify-between  gap-8'>
         <div className='pb-4'>
           <h2 className='font-bold text-5xl pb-4 text-green-900'>Featured</h2>
@@ -33,7 +33,7 @@ const Features = ({heroBanner}) => {
             />
           </Fade>
           <p className='w-full  pt-4 sm:w-5/6 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore officiis</p>
-          <Link href={`/product/${heroBanner.product}`}>
+          <Link href={`/product/${slug.current}`}>
             <button type='button' className=' bg-black text-white px-4 rounded-lg py-2 capitalize md:mt-6 mt-4 mx-auto block sm:mx-0 hover:bg-white hover:text-black'>Buy Now</button>
           </Link>
         </div>

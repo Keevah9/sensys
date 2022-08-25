@@ -39,7 +39,7 @@ const index = ({products, bannerData, testiData}) => {
         <Main />
       </Zoom>
       <div className="bg-yellow-400">
-        <Features heroBanner={bannerData.length && bannerData[0]} />
+        <Features product={products.length && products[0]} />
       </div>
       <Zoom>
         <MainBanner />
