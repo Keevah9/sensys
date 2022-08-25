@@ -15,7 +15,7 @@ const Main = () => {
           <p className=' w-full lg:w-full'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vel iure ad in obcaecati porro.</p>
         </div>
       </div>
-      <div className='mt-12 sm:flex  flex-row items-end   sm:justify-start sm:text-left gap-8  mx-auto w-full h-full xl:w-5/6 px-16 '>
+      <div className='mt-12 sm:flex  flex-row items-end   sm:justify-start sm:text-left gap-8  mx-auto w-full h-full xl:w-5/6 px-10 '>
         <Content desc='Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vel iure ad in obcaecati porro.' image={logo} span='hair is the way to slay'/>
       </div>
       <div className=' mt-12 sm:flex  flex-row-reverse items-end   sm:justify-start sm:text-left gap-8  mx-auto w-full h-full xl:w-5/6 px-10 '>
