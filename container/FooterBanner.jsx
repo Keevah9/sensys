@@ -23,15 +23,15 @@ const FooterBanner = () => {
             </div>
             <div className='mt-6'>
               <h4 className='pb-4 font-bold text-2xl'>Company</h4>
-              <Link href='/Shipping'>
+              <a href='/Shipping'>
                 <p>Shipping & Returns </p>
-              </Link>
-              <Link href='/Terms'>
+              </a>
+              <a href='/Terms'>
                 <p className='py-4'>Terms of use </p>
-              </Link>
-              <Link href='/Privacy'>
+              </a>
+              <a href='/Privacy'>
                 <a className='py-4'>Privacy Policy </a>
-              </Link>
+              </a>
             </div>
           </div>
           <div>
