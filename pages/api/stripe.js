@@ -1,6 +1,6 @@
 import Stripe from "stripe";
 import { loadStripe } from "@stripe/stripe-js";
-const stripe = new ('stripe')(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
