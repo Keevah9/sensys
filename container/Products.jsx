@@ -13,7 +13,7 @@ const Products = ({product: {image, name, slug, price}}) => {
                 <div className=' rounded-b-xl text-center  mx-auto pb-8 '>
                     <p className=' text-green-900 font-bold '>{name}</p>
                     <p>${price}</p>
-                    <button className='mt-4 2xl:mt-16 bg-black text-white px-4 rounded-lg py-2 capitalize md:mt-12 block mx-auto  sm:mx-0 hover:bg-yellow-400hover:text-black'>Buy</button>
+                    <button className=' bg-black text-white px-8 rounded-lg py-2 capitalize mt-4 block mx-auto    hover:bg-yellow-400hover:text-black'>Buy</button>
                 </div>
             </div>
         </Link>
