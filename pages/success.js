@@ -31,7 +31,7 @@ const Success = () => {
               className="text-yellow-500 font-bold pl-2"
               href="mailto:sensysinfo31@gmail.com"
             >
-              sensysinfo@gmail
+              sensysinfo@gmail.com
             </a>
           </p>
         </div>
